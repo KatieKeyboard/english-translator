@@ -53,10 +53,10 @@ describe('American - British Translator', () => {
 
 		cy.get('.highlight').each((highlighted) => {
 			cy.wrap(highlighted.text()).should('to.be.oneOf', [
-				'soccer',
-				'Tylenol',
 				'odds and ends',
 				'fanny pack',
+				'soccer',
+				'Tylenol',
 			]);
 		});
 	});
